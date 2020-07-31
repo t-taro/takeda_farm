@@ -1,0 +1,137 @@
+body{
+  font-family: Noto, Hiragino Sans,Helvetica,Arial,sans-serif;
+  /* font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+ul,li{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.material-icons{
+  align-self: center;
+}
+
+header{
+  height: 600px;
+  position: relative;
+  color: rgb(25, 72, 201);
+}
+
+#nav_wrap{
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid rgb(156, 182, 255);
+  background-color: #fff;
+}
+
+
+#title{
+  font-size: 200px;
+  position: absolute;
+  top: calc(50% - 100px);
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* product */
+@media(max-width:767px){
+  .card{
+    width: 100% !important;
+  }
+  
+  #veg_list:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #veg_list:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  /* cards */
+  .card:nth-child(odd){
+    flex-direction: row;
+  }
+  
+  .card:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  
+  .card-img-top{
+    height: 100px;
+    width: auto;    
+  }
+  
+  .card-body{
+    padding: 8px 12px;
+  }
+}
+
+.veg_img{
+  height: 100px;
+  width: 100px;
+  background-color: bisque;
+}
+
+/* material icons */
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+@media(max-width:575px){
+  #nav_wrap{
+    width: 80%;
+  }
+  
+  #nav_wrap>h1{
+    font-size: 24px;
+  }
+  
+  #title{
+    font-size: 120px;
+    top: calc(50% - 60px);
+  }
+}
+
+@media(min-width:576px){
+  #nav_wrap{
+    width: 540px;
+  }
+}
+
+@media(min-width:768px){
+  #nav_wrap{
+    width: 720px;
+  }
+}
+
+@media(min-width:992px){
+  #nav_wrap{
+    width: 960px;
+  }
+}
+
+@media(min-width:1200px){
+  #nav_wrap{
+    width: 1140px;
+  }
+}
